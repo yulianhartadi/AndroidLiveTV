@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">shalihTV</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dasbor</string>
+    <string name="title_notifications">Notifikasi</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <string name="home_latest">Channel Terbaru</string>
+    <string name="home_category_list">Daftar Kategori</string>
+    <string name="view_more">Tampilkan Semua</string>
+    <string name="no_item_found">Item tidak ditemukan</string>
+    <string name="overview">Overview :-</string>
+    <string name="rating">Rating</string>
+    <string name="thank_rating">Terima kasih atas rating yang diberikan</string>
+    <string name="submit">Kirim</string>
+    <string name="report_channel">Laporkan Channel</string>
+    <string name="report_channel_view">Laporkan Channel :-</string>
+    <string name="report_issue">Tulis keluhan Anda disini</string>
+    <string name="related_channel">Channel Terkait :-</string>
+    <string name="comments">Tinggalkan Komentar : </string>
+    <string name="leave_comment">Tinggalkan komentar Anda</string>
+
+    <string name="name">Nama</string>
+
+    <string name="conne_msg1">Tidak tersambung jaringan!</string>
+    <string name="loading">Memuat</string>
+
+    <string name="version">Versi</string>
+    <string name="author">Pengelola</string>
+    <string name="company">Perusahaan</string>
+    <string name="email">Email</string>
+    <string name="website">Website</string>
+    <string name="contact">Kontak</string>
+    <string name="about">Tentang</string>
+
+    <string name="menu_home">Beranda</string>
+    <string name="menu_category">Kategori</string>
+    <string name="menu_latest">Terbaru</string>
+    <string name="menu_favourite">Favorit</string>
+    <string name="menu_profile">Profil</string>
+    <string name="menu_communicate">Hubungi</string>
+    <string name="menu_about">Tentang Kami</string>
+    <string name="menu_rate_app">Beri rating ShalihTV App</string>
+    <string name="menu_share_app">Bagikan App</string>
+    <string name="menu_search">Cari</string>
+    <string name="menu_logout">Keluar</string>
+    <string name="menu_privacy">Kebijakan Penggunaan</string>
+    <string name="menu_live_tv">Live TV</string>
+    <string name="menu_video">Video</string>
+    <string name="menu_featured">Featured</string>
+    <string name="menu_setting">Setelan</string>
+
+    <string name="share_msg">Unduh App siaran live streaming TV Islam gratis melalui Google Play Store di \n https://play.google.com/store/apps/details?id=</string>
+
+    <string name="favourite_add">Channel Video favorit tersimpan</string>
+    <string name="favourite_remove">Sukses hapus dari favorit</string>
+    <!--intro screen-->
+    <string name="skip">Lewati</string>
+    <string name="next">Lanjutkan</string>
+    <string name="intro_1_title">Pilih Video Anda</string>
+    <string name="intro_1_desc">Tampilkan channel berdasarkan Kategori, Terbaru atau berdasarkan Rating Popularitas</string>
+    <string name="intro_2_title">Tampil di Layar Lebih Besar </string>
+    <string name="intro_2_desc">Anda dapat menampilkan Channel atau Video ke layar yang lebih besar menggunakan Chromecast</string>
+    <string name="intro_3_title">Youtube Video</string>
+    <string name="intro_3_desc">Putar Youtube Video seperti ketika memutar di Youtube App</string>
+
+    <string name="casty_introduction_text">Gunakan tombol ini untuk menghubungkan dengan Chrome Cast</string>
+
+    <string name="signup">Daftar</string>
+    <string name="login">Masuk</string>
+
+    <string name="password">Kata Sandi</string>
+    <string name="forgot_password">Lupa Sandi?</string>
+    <string name="remember">Tetap Masuk</string>
+    <string name="register">Daftar</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="phone">No. HP</string>
+    <string name="already_account_sign_in">Sudah mempunyai akun?</string>
+    <string name="logout_msg">Anda yakin ingin keluar?</string>
+    <string name="login_msg">Silahkan masuk terlebih dahulu</string>
+    <string name="privacy_url">http://apptific.com/PlayStore/Privacy-Policy.html</string>
+    <!-- if you want to RTL then put it true other wise it false-->
+    <string name="isRTL">false</string>
+
+    <string name="tag_line">Tonton Live TV</string>
+    <string name="notification">Setelan Notifikasi</string>
+    <string name="play_in_external">Putar Channel dengan Pemutar Eksternal</string>
+
+    <!-- youtube api key -->
+    <string name="youtube_api_key">AIzaSyAYJwy6nzCFqgr5LtihRI3YuVBb_34aprw</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="cast_youtube">Siaran Video Youtube tidak dapat tampil di Chrome Cast</string>
+
+    <!--external player -->
+    <string name="select_player">Pilih Player</string>
+    <string name="mx_player">MX Player</string>
+    <string name="vlc_player">VLC Player</string>
+    <string name="xmtv_player">XMTV Player</string>
+    <string name="download_msg">%s tidak terinstal. klik tombol untuk mengunduh atau pilih pemutar lain</string>
+    <string name="important">Penting</string>
+    <string name="download">Unduh</string>
+    <string name="cancel">Batal</string>
+    <string name="xmtv_download_link">http://download.xmtvplayer.com:8080/apk/xmtvplayer2018.apk</string>
+
+    <string name="text_no_item">Tidak ada item tersedia.</string>
+    <string name="back_twice">Klik BACK sekali lagi untuk keluar</string>
+    <string name="default_notification_channel_id">ShalihTV</string>
+    <string name="option_menu_overflow">&#8942;</string>
+    <string name="option_add_favourite">Tambahkan ke Favorit</string>
+    <string name="option_remove_favourite">Hapus dari daftar Favorit</string>
+
+</resources>
