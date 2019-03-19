@@ -43,7 +43,7 @@
     </style>
 
     <style name="TextAppearance.CustomCastIntroOverlay.Button" parent="android:style/TextAppearance">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/teal_900</item>
         <item name="windowActionBar">false</item>
     </style>
 

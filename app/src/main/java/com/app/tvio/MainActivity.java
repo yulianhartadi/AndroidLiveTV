@@ -270,18 +270,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void fillNavItem() {
-        mNavItem.add(new ItemNav(0, R.drawable.ic_home, getResources().getString(R.string.menu_home)));
-        mNavItem.add(new ItemNav(1, R.drawable.ic_latest, getResources().getString(R.string.menu_latest)));
-        mNavItem.add(new ItemNav(2, R.drawable.ic_category, getResources().getString(R.string.menu_category)));
-        mNavItem.add(new ItemNav(3, R.drawable.ic_featured, getResources().getString(R.string.menu_featured)));
-        mNavItem.add(new ItemNav(4, R.drawable.ic_video, getResources().getString(R.string.menu_video)));
-        mNavItem.add(new ItemNav(5, R.drawable.ic_favourite, getResources().getString(R.string.menu_favourite)));
-        mNavItem.add(new ItemNav(13, R.drawable.ic_setting, getResources().getString(R.string.menu_setting)));
+        mNavItem.add(new ItemNav(0, R.drawable.ic_home_drawer, getResources().getString(R.string.menu_home)));
+        mNavItem.add(new ItemNav(1, R.drawable.ic_latest_drawer, getResources().getString(R.string.menu_latest)));
+        mNavItem.add(new ItemNav(2, R.drawable.ic_category_drawer, getResources().getString(R.string.menu_category)));
+        mNavItem.add(new ItemNav(3, R.drawable.ic_featured_drawer, getResources().getString(R.string.menu_featured)));
+        mNavItem.add(new ItemNav(4, R.drawable.ic_video_drawer, getResources().getString(R.string.menu_video)));
+        mNavItem.add(new ItemNav(5, R.drawable.ic_favorit_drawer, getResources().getString(R.string.menu_favourite)));
+        mNavItem.add(new ItemNav(13, R.drawable.ic_setting_drawer, getResources().getString(R.string.menu_setting)));
         if (MyApp.getIsLogin()) {
-            mNavItem.add(new ItemNav(10, R.drawable.ic_profile, getResources().getString(R.string.menu_profile)));
-            mNavItem.add(new ItemNav(11, R.drawable.ic_logout, getResources().getString(R.string.menu_logout)));
+            mNavItem.add(new ItemNav(10, R.drawable.ic_profile_drawer, getResources().getString(R.string.menu_profile)));
+            mNavItem.add(new ItemNav(11, R.drawable.ic_logout_drawer, getResources().getString(R.string.menu_logout)));
         } else {
-            mNavItem.add(new ItemNav(12, R.drawable.ic_login, getResources().getString(R.string.login)));
+            mNavItem.add(new ItemNav(12, R.drawable.ic_login_drawer, getResources().getString(R.string.login)));
         }
 
     }

@@ -47,7 +47,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/spacing_large"
-            android:text="Anda belum memasukkan channel atau video favorit apapun. Channel favorit Anda akan tampil disini"
+            android:text="Belum ada apapun disini"
             android:gravity="center"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
             android:textColor="@color/grey_500" />

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/intro_bg">
+    android:background="@color/grey_50">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/view_pager"
@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
-        android:background="@color/white"
+        android:background="@color/grey_50"
         android:baselineAligned="false"
         android:orientation="horizontal"
         android:gravity="center">
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button_yellow"
                 android:text="@string/skip"
-                android:textColor="@color/white" />
+                android:textColor="@color/grey_50" />
 
         </LinearLayout>
 
@@ -85,7 +85,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/rounded_button_gray"
                 android:text="@string/next"
-                android:textColor="@color/white" />
+                android:textColor="@color/grey_50" />
         </LinearLayout>
     </LinearLayout>
 

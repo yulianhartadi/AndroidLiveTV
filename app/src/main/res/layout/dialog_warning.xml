@@ -70,7 +70,7 @@
             android:paddingRight="@dimen/spacing_mlarge"
             android:text="Kembali"
             android:textColor="@android:color/white" />
-
+        <!--
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/bt_jadwal"
             style="@style/Widget.AppCompat.Button.Borderless"
@@ -81,7 +81,7 @@
             android:paddingRight="@dimen/spacing_mlarge"
             android:text="Jadwal"
             android:textColor="@android:color/white" />
-
+        -->
     </LinearLayout>
 
 </LinearLayout>
