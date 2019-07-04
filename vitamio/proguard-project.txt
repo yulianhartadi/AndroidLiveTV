@@ -27,3 +27,9 @@
 -keep public class io.vov.vitamio.VitamioLicense { *; }
 -keep public class io.vov.vitamio.Vitamio { *; }
 -keep public class io.vov.vitamio.MediaMetadataRetriever { *; }
+-keep class android.support.v7.app.MediaRouteActionProvider{
+  *;
+}
+-keep class androidx.mediarouter.app.MediaRouteActionProvider{
+*;
+}

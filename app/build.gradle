@@ -4,19 +4,19 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.app.tvio"
-        manifestPlaceholders = [manifestApplicationId: "${applicationId}",
-                                onesignal_app_id: "3d1093c8-681b-4e78-a9fb-7a33887fcdc7",
+        manifestPlaceholders = [manifestApplicationId          : "${applicationId}",
+                                onesignal_app_id               : "3d1093c8-681b-4e78-a9fb-7a33887fcdc7",
                                 onesignal_google_project_number: "REMOTE"]
         minSdkVersion 17
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 9
+        versionName '1.5'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         android.defaultConfig.vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true // To use xml icon
     }
-    buildTypes.each{
+    buildTypes.each {
         it.buildConfigField 'String', 'SERVER_URL', serverUrl
     }
     buildTypes {
@@ -25,10 +25,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:animated-vector-drawable:28.0.0'
     implementation 'com.android.support:support-v4:28.0.0'
@@ -56,6 +58,7 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.3'
     implementation files('libs/YouTubeAndroidPlayerApi.jar')
     implementation project(':vitamio')
+    //implementation 'com.google.android.exoplayer:exoplayer:2.10.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'

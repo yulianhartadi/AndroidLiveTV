@@ -4,8 +4,9 @@ import android.Manifest.permission;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.support.annotation.RequiresPermission;
 import android.telephony.TelephonyManager;
+
+import androidx.annotation.RequiresPermission;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
