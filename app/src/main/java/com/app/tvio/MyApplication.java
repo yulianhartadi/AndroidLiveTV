@@ -30,7 +30,6 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-                //.setDefaultFontPath("fonts/custom.otf")
                 .setDefaultFontPath("fonts/googlesans.ttf")
                 .setFontAttrId(R.attr.fontPath)
                 .build());

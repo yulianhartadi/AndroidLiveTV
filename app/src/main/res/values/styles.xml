@@ -6,10 +6,12 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/GoogleSansTextViewStyle</item>
     </style>
 
+    <!-- normal border color change as you wish -->
     <style name="YellowCheck">
-        <item name="colorControlNormal">@color/white</item>   <!-- normal border color change as you wish -->
+        <item name="colorControlNormal">@color/white</item>
         <item name="colorControlActivated">@color/yellow_line</item>
     </style>
 
@@ -61,5 +63,9 @@
 
     <style name="CustomCastExpandedController" parent="CastExpandedController" />
 
+    <!-- Custom font -->
+    <style name="GoogleSansTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/google_sans_regular</item>
+    </style>
 
 </resources>

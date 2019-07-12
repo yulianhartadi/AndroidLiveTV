@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
     int previousSelect = 0;
     boolean doubleBackToExitPressedOnce = false;
     LinearLayout mAdViewLayout;
+
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -303,7 +304,7 @@ public class MainActivity extends AppCompatActivity {
                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
                         MyApp.saveIsLogin(false);
-                        Intent intent = new Intent(getApplicationContext(), IntroActivity.class);
+                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intent);
                         finish();
@@ -340,7 +341,7 @@ public class MainActivity extends AppCompatActivity {
                             .withContext(MainActivity.this)
                             .withPrivacyUrl(getString(R.string.privacy_url)) // your privacy url
                             .withPublisherIds(Constant.adMobPublisherId) // your admob account Publisher id
-                            .withTestMode("9424DF76F06983D1392E609FC074596C") // remove this on real project
+                            //.withTestMode("9424DF76F06983D1392E609FC074596C") // remove this on real project
                             .check();
 
                     BannerAds.ShowBannerAds(MainActivity.this, mAdViewLayout);

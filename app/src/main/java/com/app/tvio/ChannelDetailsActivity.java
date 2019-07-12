@@ -271,7 +271,7 @@ public class ChannelDetailsActivity extends AppCompatActivity {
         String direction = isRTL ? "rtl" : "ltr";
 
         String text = "<html dir=" + direction + "><head>"
-                + "<style type=\"text/css\">@font-face {font-family: MyFont;src: url(\"file:///android_asset/fonts/custom.otf\")}body{font-family: MyFont;color: #a5a5a5;text-align:left;font-size:15px;margin-left:0px;line-height:1.2}"
+                + "<style type=\"text/css\">@font-face {font-family: MyFont;src: url(\"file:///android_asset/fonts/googlesans.ttf\")}body{font-family: MyFont;color: #a5a5a5;text-align:left;font-size:15px;margin-left:0px;line-height:1.2}"
                 + "</style></head>"
                 + "<body>"
                 + htmlText
