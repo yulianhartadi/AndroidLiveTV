@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/black">
 
     <ProgressBar
@@ -27,7 +28,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/ic_no_item"
+            app:srcCompat="@drawable/ic_no_item_white"
             android:tint="@color/white" />
 
         <TextView

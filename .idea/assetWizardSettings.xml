@@ -137,7 +137,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/av/ic_play_circle_outline_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_search_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -147,13 +147,10 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="assetSourceType" value="FILE" />
                             <entry key="color" value="f2f2f2" />
-                            <entry key="height" value="124" />
-                            <entry key="outputName" value="ic_logo_shalih" />
+                            <entry key="outputName" value="ic_no_item_white" />
                             <entry key="overrideSize" value="true" />
                             <entry key="sourceFile" value="B:\Project\MobileApp_monetize\ShalihTV\Image\logo_shalih.svg" />
-                            <entry key="width" value="292" />
                           </map>
                         </option>
                       </PersistentState>

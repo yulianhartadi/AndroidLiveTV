@@ -43,7 +43,7 @@ import cz.msebera.android.httpclient.Header;
 import me.relex.circleindicator.CircleIndicator;
 
 /**
- * Created by laxmi.
+ * Edited by yulian hartadi.
  */
 
 public class HomeFragment extends Fragment {
