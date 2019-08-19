@@ -44,6 +44,7 @@ import me.relex.circleindicator.CircleIndicator;
 
 /**
  * Edited by yulian hartadi.
+ * @kampungweb.net
  */
 
 public class HomeFragment extends Fragment {
