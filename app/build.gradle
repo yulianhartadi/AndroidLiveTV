@@ -9,12 +9,13 @@ android {
                                 onesignal_google_project_number: "REMOTE"]
         minSdkVersion 17
         targetSdkVersion 28
-        versionCode 9
-        versionName '1.5'
+        versionCode 10
+        versionName '1.5.2'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         android.defaultConfig.vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
         vectorDrawables.useSupportLibrary = true // To use xml icon
+        ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86','x86_64'
     }
     buildTypes.each {
         it.buildConfigField 'String', 'SERVER_URL', serverUrl
