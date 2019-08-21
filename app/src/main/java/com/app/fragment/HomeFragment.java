@@ -94,7 +94,7 @@ public class HomeFragment extends Fragment {
         btnMoreLatest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity) requireActivity()).hideShowBottomView(false);
+               /* ((MainActivity) requireActivity()).hideShowBottomView(false);*/
                 ((MainActivity) requireActivity()).navigationItemSelected(1);
                 String categoryName = getString(R.string.menu_latest);
                 FragmentManager fm = getFragmentManager();
@@ -110,7 +110,7 @@ public class HomeFragment extends Fragment {
         btnMoreCategory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity) requireActivity()).hideShowBottomView(false);
+                /*((MainActivity) requireActivity()).hideShowBottomView(false);*/
                 ((MainActivity) requireActivity()).navigationItemSelected(2);
                 String categoryName = getString(R.string.menu_category);
                 FragmentManager fm = getFragmentManager();
@@ -126,7 +126,7 @@ public class HomeFragment extends Fragment {
         rvCategory.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), rvCategory, new RecyclerTouchListener.ClickListener() {
             @Override
             public void onClick(View view, int position) {
-                ((MainActivity) requireActivity()).hideShowBottomView(false);
+                /*((MainActivity) requireActivity()).hideShowBottomView(false);*/
                 ((MainActivity) requireActivity()).navigationItemSelected(2);
                 String categoryName = mCategoryList.get(position).getCategoryName();
                 Bundle bundle = new Bundle();

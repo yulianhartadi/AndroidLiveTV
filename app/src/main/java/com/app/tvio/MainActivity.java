@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     public NavAdapter navAdapter;
     private FragmentManager fragmentManager;
     ArrayList<ItemNav> mNavItem;
-    BottomNavigationView navigation;
+    /*BottomNavigationView navigation;*/
     DrawerLayout drawer;
     MyApplication MyApp;
     TextView textName, textEmail;
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
     boolean doubleBackToExitPressedOnce = false;
     LinearLayout mAdViewLayout;
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+   /* private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
@@ -85,15 +85,15 @@ public class MainActivity extends AppCompatActivity {
                     navigationItemSelected(0);
                     loadFrag(allChannelFragment, getString(R.string.menu_live_tv), fragmentManager);
                     return true;
-                case R.id.navigation_video:
+                *//*case R.id.navigation_video:
                     VideoFragment videoFragment = new VideoFragment();
                     navigationItemSelected(4);
                     loadFrag(videoFragment, getString(R.string.menu_video), fragmentManager);
-                    return true;
+                    return true;*//*
             }
             return false;
         }
-    };
+    };*/
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -115,9 +115,9 @@ public class MainActivity extends AppCompatActivity {
         fragmentManager = getSupportFragmentManager();
         MyApp = MyApplication.getInstance();
 
-        //Bottom Navigation
+        /*//Bottom Navigation
         navigation = findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);*/
 
         drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(MainActivity.this, recyclerView, new RecyclerTouchListener.ClickListener() {
             @Override
             public void onClick(View view, int position) {
-                navigationClick(mNavItem.get(position).getId());
+                /*navigationClick(mNavItem.get(position).getId());*/
             }
 
             @Override
@@ -182,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onQueryTextSubmit(String arg0) {
                 // TODO Auto-generated method stub
-                hideShowBottomView(false);
+                /*hideShowBottomView(false);*/
                 String categoryName = getString(R.string.menu_search);
                 Bundle bundle = new Bundle();
                 bundle.putString("search", arg0);
@@ -211,43 +211,43 @@ public class MainActivity extends AppCompatActivity {
     private void navigationClick(int position) {
         drawer.closeDrawers();
         switch (position) {
-            case 0:
+           /* case 0:
                 navigationItemSelected(0);
                 navigation.getMenu().findItem(R.id.navigation_home).setChecked(true);
                 HomeFragment homeFragment = new HomeFragment();
                 loadFrag(homeFragment, getString(R.string.menu_home), fragmentManager);
                 hideShowBottomView(true);
-                break;
+                break;*/
             case 1:
                 navigationItemSelected(1);
                 LatestFragment latestFragment = new LatestFragment();
                 loadFrag(latestFragment, getString(R.string.menu_latest), fragmentManager);
-                hideShowBottomView(false);
+               /* hideShowBottomView(false);*/
                 break;
             case 2:
                 navigationItemSelected(2);
                 CategoryFragment categoryFragment = new CategoryFragment();
                 loadFrag(categoryFragment, getString(R.string.menu_category), fragmentManager);
-                hideShowBottomView(false);
+                /*hideShowBottomView(false);*/
                 break;
             case 3:
                 navigationItemSelected(3);
                 FeaturedFragment featuredFragment = new FeaturedFragment();
                 loadFrag(featuredFragment, getString(R.string.menu_featured), fragmentManager);
-                hideShowBottomView(false);
+                /*hideShowBottomView(false);*/
                 break;
-            case 4:
+            /*case 4:
                 navigation.getMenu().findItem(R.id.navigation_video).setChecked(true);
                 navigationItemSelected(4);
                 VideoFragment videoFragment = new VideoFragment();
                 loadFrag(videoFragment, getString(R.string.menu_video), fragmentManager);
                 hideShowBottomView(true);
-                break;
+                break;*/
             case 5:
                 navigationItemSelected(5);
                 FavouriteFragment favouriteFragment = new FavouriteFragment();
                 loadFrag(favouriteFragment, getString(R.string.menu_favourite), fragmentManager);
-                hideShowBottomView(false);
+                /*hideShowBottomView(false);*/
                 break;
             case 10:
                 navAdapter.setSelected(previousSelect);
@@ -369,10 +369,10 @@ public class MainActivity extends AppCompatActivity {
         setToolbarTitle(name);
     }
 
-    public void hideShowBottomView(boolean visibility) {
+    /*public void hideShowBottomView(boolean visibility) {
         navigation.setVisibility(visibility ? View.VISIBLE : View.GONE);
         mAdViewLayout.setVisibility(visibility ? View.GONE : View.VISIBLE);
-    }
+    }*/
 
     public void navigationItemSelected(int position) {
         previousSelect = position;
@@ -395,7 +395,7 @@ public class MainActivity extends AppCompatActivity {
             //when search is click and goes back if home
             assert tag != null;
             if (tag.equals(getString(R.string.menu_home)) || tag.equals(getString(R.string.menu_live_tv)) || tag.equals(getString(R.string.menu_video))) {
-                hideShowBottomView(true);
+                /*hideShowBottomView(true);*/
             }
             super.onBackPressed();
         } else {
